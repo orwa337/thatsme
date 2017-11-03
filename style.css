@@ -1,5 +1,7 @@
 body {
-  background-image: url('https://image.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg');
+  background-image: url('source/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,25 +14,106 @@ li {
 
 content div {
   display: none;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin: 75px 50px;
 }
 
-header , footer {
-  right: 0;
-  left: 0;
-  padding-left: 20px;
-  background-color: #5353c6;
-  text-align: left;
+hr {
+  margin-left: 0px;
+  width:250px;
+}
 
+p {
+  max-width: 75%;
+  font-family: sans-serif;
+}
+
+p:nth-child(5) {
+  border-left: 6px solid blue;
+    background-color: #ccd9ff;
 }
 
 header {
-  position: absolute;
-  top: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 9999;
+  border-radius: 5px;
 }
 
-footer{
-  position: fixed;
-  bottom: 0;
+footer {
+  background-color: #808080;
+   position: fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   font-size: 12px;
+}
+
+header ul {
+  margin: 0px;
+}
+header ul li {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 1s, color 1s ;
+}
+
+header ul li:hover {
+  
+  background-color: red;
+  color: black;
+}
+
+footer p {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left: 14px; 
+}
+
+#active {
+  opacity: 1;
+    background-color: blue;
+    color: white;
+}
+
+textarea {
+  resize: none;
+  height : 150px;
+  padding: 5px;
+}
+
+input[type=text], input[type=email],textarea {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-size: 17px;
+    width: 15%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3333ff;
 }
