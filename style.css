@@ -10,7 +10,7 @@ li {
   display: inline-block;
 }
 
-#div1 , #div2 , #div3 {
+content .div1 , content .div2 , content .div3 {
   display: none;
   margin-top: 75px;
   margin-bottom: 75px;
