@@ -1,0 +1,36 @@
+body {
+  background-image: url('https://image.freepik.com/free-photo/smooth-dark-blue-with-black-vignette-studio-well-use-as-background-business-report-digital-website-template_1258-748.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+}
+
+#div1 , #div2 , #div3 {
+  display: none;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+header , footer {
+  right: 0;
+  left: 0;
+  padding-left: 20px;
+  background-color: #5353c6;
+  text-align: left;
+
+}
+
+header {
+  position: absolute;
+  top: 0;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
