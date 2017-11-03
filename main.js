@@ -5,26 +5,16 @@ $(document).ready(function() {
   $('body').fadeIn('slow');
   $('content .div1').fadeIn('slow');
 
+  $('li').on('click', function() {
 
-  $('ul .div1').on('click', function() {
-    current = $('content .div1');
-    $('content .div1').fadeIn();
-    $('content .div2').hide();
-    $('content .div3').hide();
-  });
-
-  $('ul .div2').on('click', function() {
-    $('content .div1').hide();
-    current = $('content .div2');
-    $('content .div2').fadeIn();
-    $('content .div3').hide();
-  });
-
-  $('ul .div3').on('click', function() {
-    $('content .div1').hide();
-    $('content .div2').hide();
-    current = $('content .div3');
-    $('content .div3').fadeIn();
+    currentClass = $(this).attr("class");
+    $('content div').hide();
+     $('content div').each(function(i) {
+    if ( $(this).attr("class") == currentClass ) {
+      $(this).fadeIn();
+      current = $(this);
+    } 
+    });
   });
 
   $(document).keyup(function(event) {
